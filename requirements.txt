@@ -6,4 +6,3 @@ urllib3.py==1.25.10
 bs4.py==0.0.1
 bs4==0.0.1
 beautifulsoup4==4.9.1
-beautifulsoup4/py==4.9.1
