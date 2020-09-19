@@ -1,4 +1,5 @@
 import asyncio
+import os
 from urllib.request import urlopen
 
 import discord
@@ -9,7 +10,6 @@ import random
 client = discord.Client()
 
 
-token = "NzM0MDQ5NTMxNTQ4Nzk0ODgw.XxMC5g.Zq8x1ZD9OxAMAwP3LhflAdkNmrs"
 calcResult = 0
 
 @client.event
@@ -166,8 +166,8 @@ async def on_member_join(member):
 
 
 
-
-client.run(token)
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
 
 
 
